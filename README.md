@@ -205,7 +205,33 @@
         - Stack<T>,Queue<T>
         - Dictionary<TKey,Tvalue>
 - 예외처리
+    - 소스코드 상 문법적 오류 - 오류(Error)
+    - 실행 중 생기는 오류 - 예외(Exception)
+    ```cs
+    try {
+    // .. 예외가 발생할 것 같은 소스코드
+    } catch (Exception ex) {
+        /* 모든 예외클래스의 조상은 Exception(예 IndexOutOfRangeException)
+        어떤 예외클래스를 쓸지 모르면 무조건 Exception 클래스 사용하면 됨 */
+        Console.WriteLine(ex.Message);
+    } finally {
+        // 예외발생 유무에 상관없이 항상 실행
+    }
+    ```
 - 대리자와 이벤트
+    - 메서드 호출 시 매개변수 전달
+    - 대리자 호출 시 함수(메서드) 자체를 전달
+    - 이벤트 - 컴퓨터 내에서 발생하는 객체의 사건들
+    - delegate --> event
+    - 윈폼개발 --> 이벤트 기반(Event driven) 프로그래밍
+
+- TIP, C# 주석 중 영역을 지정할 수 있는 주석
+    - #region ~ #endregion 영역을 Expend 또는 Collapse 가능
+
+    ![인터페이스](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs002.png)
+
+
+## 3일차
 - 람다식
 - 애트리뷰트
 - dynamic 형식

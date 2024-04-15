@@ -2,17 +2,18 @@
 {
     internal class Program
     {
-        // 배열 복사 기능
-        static void CopyArray(int[] src, int[] dest)
+        // 배열 복사 기능 -> 일반화
+        // 메서드 뒤에 <T>, 매개변수의 타입대신 T로변경
+        static void CopyArray<T>(T[] src, T[] dest)
         {
             for (int i = 0; i < src.Length; i++)
                 dest[i] = src[i];
         }
-        static void CopyArray(float[] src, float[] dest)
-        {
-            for (int i = 0; i < src.Length; i++)
-                dest[i] = src[i];
-        }
+        //static void CopyArray(float[] src, float[] dest)
+        //{
+        //    for (int i = 0; i < src.Length; i++)
+        //        dest[i] = src[i];
+        //}
         static void Main(string[] args)
         {
             int[] array1 = { 10, 20, 30, 40, 50 };
