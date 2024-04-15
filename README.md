@@ -228,8 +228,7 @@
 - TIP, C# 주석 중 영역을 지정할 수 있는 주석
     - #region ~ #endregion 영역을 Expend 또는 Collapse 가능
 
-    ![인터페이스](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs002.png)
-
+    ![regoin주석](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs002.png)
 
 ## 3일차
 - 람다식
