@@ -310,8 +310,21 @@
         ![비동기앱](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs004.png)
 
 ## 6일차
-    - 윈도우 탐색기 앱
-    - 도서관리 앱 With SQL Server
-    - ModernUI 앱
-    - 국가교통정보센터 CCTV뷰 앱
-    - IoT Dummy 앱 With SQL Server
+- 예제 프로젝트
+    - 윈도우 탐색기 앱(컨트롤 학습)
+        - MyExplorer 프로젝트 생성
+        - flaticon.com(아이콘 검색), png to ico(아이콘 변환)
+
+        ![중간결과](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs005.png)
+
+        - 미적용 - 컨텍스트메뉴 보기 기능, 더블클릭 프로그램 실행, ...
+
+## 7일차
+- 예제 프로젝트
+    - 윈도우 탐색기 앱 종료
+    - ModernUI 앱(UI디자인)
+    - 도서관리 앱 With SQL Server(Base)
+    - 국가교통정보센터 CCTV뷰 앱(OpenAPI, NuGet dll, Network)
+    - IoT Dummy 앱 With SQL Server(IoT, DB)
+
+## 개인 토이프로젝트
