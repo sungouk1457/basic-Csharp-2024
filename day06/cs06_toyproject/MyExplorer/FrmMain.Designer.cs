@@ -34,7 +34,7 @@ namespace MyExplorer
             BtnOpen = new Button();
             TxtPath = new TextBox();
             label1 = new Label();
-            splitContainer1 = new SplitContainer();
+            SpcExplorer = new SplitContainer();
             TrvFolder = new TreeView();
             ImgSmallicon = new ImageList(components);
             LsvFile = new ListView();
@@ -51,10 +51,10 @@ namespace MyExplorer
             자세히ToolStripMenuItem = new ToolStripMenuItem();
             타일ToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)SpcExplorer).BeginInit();
+            SpcExplorer.Panel1.SuspendLayout();
+            SpcExplorer.Panel2.SuspendLayout();
+            SpcExplorer.SuspendLayout();
             CmsFiles.SuspendLayout();
             SuspendLayout();
             // 
@@ -99,22 +99,22 @@ namespace MyExplorer
             label1.TabIndex = 0;
             label1.Text = "경로";
             // 
-            // splitContainer1
+            // SpcExplorer
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 46);
-            splitContainer1.Name = "splitContainer1";
+            SpcExplorer.Dock = DockStyle.Fill;
+            SpcExplorer.Location = new Point(0, 46);
+            SpcExplorer.Name = "SpcExplorer";
             // 
-            // splitContainer1.Panel1
+            // SpcExplorer.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(TrvFolder);
+            SpcExplorer.Panel1.Controls.Add(TrvFolder);
             // 
-            // splitContainer1.Panel2
+            // SpcExplorer.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(LsvFile);
-            splitContainer1.Size = new Size(949, 404);
-            splitContainer1.SplitterDistance = 316;
-            splitContainer1.TabIndex = 1;
+            SpcExplorer.Panel2.Controls.Add(LsvFile);
+            SpcExplorer.Size = new Size(949, 404);
+            SpcExplorer.SplitterDistance = 316;
+            SpcExplorer.TabIndex = 1;
             // 
             // TrvFolder
             // 
@@ -155,7 +155,7 @@ namespace MyExplorer
             LsvFile.TabIndex = 0;
             LsvFile.UseCompatibleStateImageBehavior = false;
             LsvFile.View = View.Details;
-            LsvFile.MouseClick += LsvFile_MouseClick;
+            LsvFile.MouseDown += LsvFile_MouseDown;
             // 
             // ClhTitle
             // 
@@ -200,37 +200,37 @@ namespace MyExplorer
             // 
             보기ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 큰아이콘ToolStripMenuItem, 작은아이콘ToolStripMenuItem, 목록ToolStripMenuItem, 자세히ToolStripMenuItem, 타일ToolStripMenuItem });
             보기ToolStripMenuItem.Name = "보기ToolStripMenuItem";
-            보기ToolStripMenuItem.Size = new Size(180, 22);
+            보기ToolStripMenuItem.Size = new Size(98, 22);
             보기ToolStripMenuItem.Text = "보기";
             // 
             // 큰아이콘ToolStripMenuItem
             // 
             큰아이콘ToolStripMenuItem.Name = "큰아이콘ToolStripMenuItem";
-            큰아이콘ToolStripMenuItem.Size = new Size(180, 22);
+            큰아이콘ToolStripMenuItem.Size = new Size(138, 22);
             큰아이콘ToolStripMenuItem.Text = "큰 아이콘";
             // 
             // 작은아이콘ToolStripMenuItem
             // 
             작은아이콘ToolStripMenuItem.Name = "작은아이콘ToolStripMenuItem";
-            작은아이콘ToolStripMenuItem.Size = new Size(180, 22);
+            작은아이콘ToolStripMenuItem.Size = new Size(138, 22);
             작은아이콘ToolStripMenuItem.Text = "작은 아이콘";
             // 
             // 목록ToolStripMenuItem
             // 
             목록ToolStripMenuItem.Name = "목록ToolStripMenuItem";
-            목록ToolStripMenuItem.Size = new Size(180, 22);
+            목록ToolStripMenuItem.Size = new Size(138, 22);
             목록ToolStripMenuItem.Text = "목록";
             // 
             // 자세히ToolStripMenuItem
             // 
             자세히ToolStripMenuItem.Name = "자세히ToolStripMenuItem";
-            자세히ToolStripMenuItem.Size = new Size(180, 22);
+            자세히ToolStripMenuItem.Size = new Size(138, 22);
             자세히ToolStripMenuItem.Text = "자세히";
             // 
             // 타일ToolStripMenuItem
             // 
             타일ToolStripMenuItem.Name = "타일ToolStripMenuItem";
-            타일ToolStripMenuItem.Size = new Size(180, 22);
+            타일ToolStripMenuItem.Size = new Size(138, 22);
             타일ToolStripMenuItem.Text = "타일";
             // 
             // FrmMain
@@ -238,7 +238,7 @@ namespace MyExplorer
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(949, 450);
-            Controls.Add(splitContainer1);
+            Controls.Add(SpcExplorer);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMain";
@@ -247,10 +247,10 @@ namespace MyExplorer
             Load += FrmMain_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
+            SpcExplorer.Panel1.ResumeLayout(false);
+            SpcExplorer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)SpcExplorer).EndInit();
+            SpcExplorer.ResumeLayout(false);
             CmsFiles.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -261,7 +261,7 @@ namespace MyExplorer
         private Button BtnOpen;
         private TextBox TxtPath;
         private Label label1;
-        private SplitContainer splitContainer1;
+        private SplitContainer SpcExplorer;
         private TreeView TrvFolder;
         private ListView LsvFile;
         private ColumnHeader ClhTitle;

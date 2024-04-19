@@ -119,13 +119,12 @@ namespace MyExplorer
                 }
             }
         }
-
         //리스트뷰 마우스클릭 이벤트핸들러
-        private void LsvFile_MouseClick(object sender, MouseEventArgs e)
+        private void LsvFile_MouseDown(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Right) 
+            if (e.Button == MouseButtons.Right)
             {//컨텍스트메뉴는 오른쪽 버튼에서만 동작
-                CmsFiles.Show(LsvFile,e.Location); //마우스 클릭한 위치에 출력
+                CmsFiles.Show(LsvFile, e.Location); //마우스 클릭한 위치에 출력
             }
         }
     }
