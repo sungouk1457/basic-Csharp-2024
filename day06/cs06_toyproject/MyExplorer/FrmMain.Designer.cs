@@ -45,11 +45,11 @@ namespace MyExplorer
             ImgLargeicon = new ImageList(components);
             CmsFiles = new ContextMenuStrip(components);
             보기ToolStripMenuItem = new ToolStripMenuItem();
-            큰아이콘ToolStripMenuItem = new ToolStripMenuItem();
-            작은아이콘ToolStripMenuItem = new ToolStripMenuItem();
-            목록ToolStripMenuItem = new ToolStripMenuItem();
-            자세히ToolStripMenuItem = new ToolStripMenuItem();
-            타일ToolStripMenuItem = new ToolStripMenuItem();
+            TstMenuSmallIcon = new ToolStripMenuItem();
+            TstMenuList = new ToolStripMenuItem();
+            TstMenuDetails = new ToolStripMenuItem();
+            TstMenuTile = new ToolStripMenuItem();
+            TstMenuLargeIcon = new ToolStripMenuItem();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SpcExplorer).BeginInit();
             SpcExplorer.Panel1.SuspendLayout();
@@ -194,44 +194,49 @@ namespace MyExplorer
             // 
             CmsFiles.Items.AddRange(new ToolStripItem[] { 보기ToolStripMenuItem });
             CmsFiles.Name = "CmsFiles";
-            CmsFiles.Size = new Size(99, 26);
+            CmsFiles.Size = new Size(181, 48);
             // 
             // 보기ToolStripMenuItem
             // 
-            보기ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 큰아이콘ToolStripMenuItem, 작은아이콘ToolStripMenuItem, 목록ToolStripMenuItem, 자세히ToolStripMenuItem, 타일ToolStripMenuItem });
+            보기ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TstMenuLargeIcon, TstMenuSmallIcon, TstMenuList, TstMenuDetails, TstMenuTile });
             보기ToolStripMenuItem.Name = "보기ToolStripMenuItem";
-            보기ToolStripMenuItem.Size = new Size(98, 22);
+            보기ToolStripMenuItem.Size = new Size(180, 22);
             보기ToolStripMenuItem.Text = "보기";
             // 
-            // 큰아이콘ToolStripMenuItem
+            // TstMenuSmallIcon
             // 
-            큰아이콘ToolStripMenuItem.Name = "큰아이콘ToolStripMenuItem";
-            큰아이콘ToolStripMenuItem.Size = new Size(138, 22);
-            큰아이콘ToolStripMenuItem.Text = "큰 아이콘";
+            TstMenuSmallIcon.Name = "TstMenuSmallIcon";
+            TstMenuSmallIcon.Size = new Size(180, 22);
+            TstMenuSmallIcon.Text = "작은 아이콘";
+            TstMenuSmallIcon.Click += TstMenuSmallIcon_Click;
             // 
-            // 작은아이콘ToolStripMenuItem
+            // TstMenuList
             // 
-            작은아이콘ToolStripMenuItem.Name = "작은아이콘ToolStripMenuItem";
-            작은아이콘ToolStripMenuItem.Size = new Size(138, 22);
-            작은아이콘ToolStripMenuItem.Text = "작은 아이콘";
+            TstMenuList.Name = "TstMenuList";
+            TstMenuList.Size = new Size(180, 22);
+            TstMenuList.Text = "목록";
+            TstMenuList.Click += TstMenuList_Click;
             // 
-            // 목록ToolStripMenuItem
+            // TstMenuDetails
             // 
-            목록ToolStripMenuItem.Name = "목록ToolStripMenuItem";
-            목록ToolStripMenuItem.Size = new Size(138, 22);
-            목록ToolStripMenuItem.Text = "목록";
+            TstMenuDetails.Name = "TstMenuDetails";
+            TstMenuDetails.Size = new Size(180, 22);
+            TstMenuDetails.Text = "자세히";
+            TstMenuDetails.Click += TstMenuDetails_Click;
             // 
-            // 자세히ToolStripMenuItem
+            // TstMenuTile
             // 
-            자세히ToolStripMenuItem.Name = "자세히ToolStripMenuItem";
-            자세히ToolStripMenuItem.Size = new Size(138, 22);
-            자세히ToolStripMenuItem.Text = "자세히";
+            TstMenuTile.Name = "TstMenuTile";
+            TstMenuTile.Size = new Size(180, 22);
+            TstMenuTile.Text = "타일";
+            TstMenuTile.Click += TstMenuTile_Click;
             // 
-            // 타일ToolStripMenuItem
+            // TstMenuLargeIcon
             // 
-            타일ToolStripMenuItem.Name = "타일ToolStripMenuItem";
-            타일ToolStripMenuItem.Size = new Size(138, 22);
-            타일ToolStripMenuItem.Text = "타일";
+            TstMenuLargeIcon.Name = "TstMenuLargeIcon";
+            TstMenuLargeIcon.Size = new Size(180, 22);
+            TstMenuLargeIcon.Text = "큰 아이콘";
+            TstMenuLargeIcon.Click += TstMenuLargeIcon_Click;
             // 
             // FrmMain
             // 
@@ -272,10 +277,10 @@ namespace MyExplorer
         private ImageList ImgLargeicon;
         private ContextMenuStrip CmsFiles;
         private ToolStripMenuItem 보기ToolStripMenuItem;
-        private ToolStripMenuItem 큰아이콘ToolStripMenuItem;
-        private ToolStripMenuItem 작은아이콘ToolStripMenuItem;
-        private ToolStripMenuItem 목록ToolStripMenuItem;
-        private ToolStripMenuItem 자세히ToolStripMenuItem;
-        private ToolStripMenuItem 타일ToolStripMenuItem;
+        private ToolStripMenuItem TstMenuSmallIcon;
+        private ToolStripMenuItem TstMenuList;
+        private ToolStripMenuItem TstMenuDetails;
+        private ToolStripMenuItem TstMenuTile;
+        private ToolStripMenuItem TstMenuLargeIcon;
     }
 }
