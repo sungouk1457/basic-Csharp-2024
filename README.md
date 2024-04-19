@@ -289,7 +289,7 @@
         - *Dialog : Dlg-
         - RichTextBox : Rtx-
 
-## 5d일차
+## 5일차
 - 윈폼 UI 개발(계속)
     - 스레드 추가
         - 프로세스를 나누어서 동시에 여러가지일 진행
@@ -323,6 +323,8 @@
 - 예제 프로젝트
     - 윈도우 탐색기 앱 종료
         - 실행결과
+
+        https://github.com/sungouk1457/basic-Csharp-2024/assets/131221230/0ea5e4af-c099-4e09-b354-fa5fd833e27b
 
 
     - 도서관리 앱 With SQL Server(Base) ModernUI(NuGet패키지)
