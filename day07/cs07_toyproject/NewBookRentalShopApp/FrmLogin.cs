@@ -41,6 +41,23 @@ namespace NewBookRentalShopApp
         //로그인버튼 클릭 이벤트핸들러
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            bool isFail = false;
+            string errMsg = string.Empty;
+            if (string.IsNullOrEmpty(TxtUesrId.Text))
+            {
+                isFail = true;
+                errMsg += "아이디를 입력하세요\n";
+            }
+            if (string.IsNullOrEmpty(TxtPassword.Text))
+            {
+                isFail = true;
+                errMsg += "패스워드를 입력하세요\n";
+            }
+            if(isFail == true)
+            {
+                MessageBox.Show(errMsg, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             //DB연계
             IsLogin = LoginProcess(); //로그인이 성공하면 True, 실패하면 False 리턴
             if(IsLogin) this.Close(); //현재 로그인창 닫기
