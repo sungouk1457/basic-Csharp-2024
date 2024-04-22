@@ -328,6 +328,7 @@
 
 
     - 도서관리 앱 With SQL Server(Base) ModernUI(NuGet패키지)
+
     ```cs
     // 값형식 변수에 null값을 넣을 수 있도록 만들어준 기능 Nullable. 변수명 뒤에 ?만 추가할 것
     int? a = null;
@@ -338,7 +339,20 @@
 
 ## 8일차
 - 토이 프로젝트
-    - 도서관리 앱 종료
+    - 도서관리 앱 관리화면
+        - 앱사용자관리 완료
+
+## 9일차
+- 토이 프로젝트
+    - 도서관리 앱
+        - 책장르 관리
+        - 책정보 관리
+        - 도서회원 관리
+        - 대출관리
+        - 이 프로그램은...
+
+## 나머지
+- Pending       
     - IoT Dummy 앱 With SQL Server(IoT, DB)
 
     - 국가교통정보센터 CCTV뷰 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
