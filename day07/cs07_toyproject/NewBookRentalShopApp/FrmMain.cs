@@ -15,6 +15,8 @@ namespace NewBookRentalShopApp
     {
         // 각 화면을 초기화
         FrmLoginUser frmLoginUser = null; //객체를 메서드로 생성
+        FrmBookDivision frmBookDivision = null;
+        FrmBookInfo frmBookInfo = null;
         public FrmMain()
         {
             InitializeComponent();
@@ -36,6 +38,18 @@ namespace NewBookRentalShopApp
             //이런 작업을 안하면 메뉴클릭시마다 새 폼이 열림
             frmLoginUser = ShowActiveForm(frmLoginUser, typeof(FrmLoginUser)) as FrmLoginUser;
         }
+
+        //책 장르관리 메뉴 클릭 이벤트핸들러
+        private void MnuBookDivision_Click(object sender, EventArgs e)
+        {
+            frmBookDivision = ShowActiveForm(frmBookDivision, typeof(FrmBookDivision)) as FrmBookDivision;
+        }
+
+        private void MnuBookInfo_Click(object sender, EventArgs e)
+        {
+            frmBookInfo = ShowActiveForm(frmBookInfo, typeof(FrmBookInfo)) as FrmBookInfo;
+        }
+
         Form ShowActiveForm(Form form,Type type)
         {
             if (form == null) //화면이 한번도 안열였으면
@@ -61,5 +75,6 @@ namespace NewBookRentalShopApp
             }
             return form;
         }
+
     }
 }
