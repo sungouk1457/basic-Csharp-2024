@@ -174,7 +174,8 @@
             // LblLoginId
             // 
             this.LblLoginId.Name = "LblLoginId";
-            this.LblLoginId.Size = new System.Drawing.Size(0, 17);
+            this.LblLoginId.Size = new System.Drawing.Size(12, 17);
+            this.LblLoginId.Text = "-";
             // 
             // FrmMain
             // 
