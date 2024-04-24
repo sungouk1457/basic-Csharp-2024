@@ -358,6 +358,8 @@
         - 대출관리
         - 이 프로그램은...
 
+        ![책대여프로그램](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs006.png)
+
 ## 나머지
 - Pending       
     - IoT Dummy 앱 With SQL Server(IoT, DB)
