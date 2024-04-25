@@ -164,16 +164,17 @@ namespace toyproject
                     cmd.Parameters.Add(prmEng);
                     SqlParameter prmMath = new SqlParameter("@Math", NudMath.Text);
                     cmd.Parameters.Add(prmMath);
-                    double totalScore = (double)NudKor.Value + (double)NudEng.Value + (double)NudMath.Value;
-                    double averageScore = totalScore / 3;
-                    TxtAvg.Text = averageScore.ToString("0.0");
-                    SqlParameter prmTotal = new SqlParameter("@Total", totalScore);
+                    SqlParameter prmTotal = new SqlParameter("@Total", TxtTotal.Text);
                     cmd.Parameters.Add(prmTotal);
                     SqlParameter prmAvg = new SqlParameter("@Avg", TxtAvg.Text);
                     cmd.Parameters.Add(prmAvg);
+                    double totalScore = (double)NudKor.Value + (double)NudEng.Value + (double)NudMath.Value;
+                    double averageScore = totalScore / 3;
+                    TxtAvg.Text = averageScore.ToString("0.0");
                     string grade = CalculateGrade(averageScore);
                     SqlParameter prmGrade = new SqlParameter("@Grade", grade);
                     cmd.Parameters.Add(prmGrade);
+                    
                     if (isNew != true)
                     {
                         SqlParameter prmStudentIdx = new SqlParameter("@studentIdx", TxtstudentIdx.Text);
