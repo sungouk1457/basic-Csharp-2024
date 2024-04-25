@@ -53,7 +53,7 @@ namespace NewBookRentalShopApp
                         temp.Add(reader[0].ToString(), reader[1].ToString());
                     }
 
-                    Debug.WriteLine(temp.Count);
+                    //Debug.WriteLine(temp.Count);
                     CboDivision.DataSource = new BindingSource(temp, null);
                     CboDivision.DisplayMember = "Value";
                     CboDivision.ValueMember = "Key";
