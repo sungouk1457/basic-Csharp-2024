@@ -372,6 +372,6 @@
         - 성적 입력
         - 성적 입력 후 계산
         - 저장하면 DB에 저장
-        - 평균을 가지고 등급을 저장장
+        - 평균을 가지고 등급을 저장
 
         ![자동계산기](https://github.com/sungouk1457/basic-Csharp-2024/blob/main/images/cs007.png)
