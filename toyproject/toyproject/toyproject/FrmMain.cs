@@ -80,7 +80,7 @@ namespace toyproject
                 DgvResult.Columns[2].Width = 60;
                 DgvResult.Columns[3].Width = 60;
                 DgvResult.Columns[4].Width = 60;
-                DgvResult.Columns[5].Width = 80;
+                DgvResult.Columns[5].Width = 70;
                 DgvResult.Columns[6].Width = 60;
                 DgvResult.Columns[7].Width = 60;
             }
